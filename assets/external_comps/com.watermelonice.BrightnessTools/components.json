@@ -1,0 +1,91 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2021-09-26T22:18:21+0800",
+ "nonVisible": "true",
+ "iconName": "aiwebres/icon.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "CanWriteSettings",
+   "description": "Check if modify system setting permission is granted.",
+   "params": [],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "MaxBrightness",
+   "description": "Get Max brightness of user's phone. If max brightness not found, return 255.",
+   "params": [],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "OpenWriteSettingsScreen",
+   "description": "Show screen for controlling which apps are allowed to write/modify system settings.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterOnChange",
+   "description": "After registering, you can detect the brightness and adaptive change.",
+   "params": []
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "Adaptive",
+   "description": "Set brightness to adaptive or non-adaptive. Adaptive if true, otherwise non-adaptive.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "Brightness",
+   "description": "Set the brightness of user's phone. Minimum value is 0.",
+   "type": "number"
+  }
+ ],
+ "helpUrl": "",
+ "licenseName": "",
+ "type": "com.watermelonice.BrightnessTools.BrightnessTools",
+ "versionName": "v1.2",
+ "androidMinSdk": 7,
+ "version": "3",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "BrightnessTools",
+ "helpString": "This extension is created for changing the brightness of user's phone. <br> Created by WatermelonIce <br><br> <b>My Profile in Kodular Community: <\/b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile<\/a><br><b>Support me by subscribing my YouTube Channel: <\/b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel<\/a>",
+ "properties": [],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "Changed",
+   "description": "Triggered when detected any brightness or adaptive change. The param \"changed\" indicate what has change.",
+   "params": [
+    {
+     "name": "changed",
+     "type": "number"
+    },
+    {
+     "name": "brightness",
+     "type": "number"
+    },
+    {
+     "name": "adaptive",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ErrorOccurred",
+   "description": "Raises when error occurred",
+   "params": [{
+    "name": "error",
+    "type": "text"
+   }]
+  }
+ ]
+}]
