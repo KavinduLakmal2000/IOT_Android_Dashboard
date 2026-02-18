@@ -1,6 +1,6 @@
-# 📱 Desk Dashboard – Android App (MIT App Inventor)
+# 📱 Desk Dashboard – Android App (MIT App Inventor) |2025 Nov|
 
-A simple and practical Desk Dashboard Android application built using MIT App Inventor.
+A simple and practical Desk Dashboard Android application built using MIT App Inventor. 
 
 This app is designed to display real-time date & time along with IoT-based home monitoring data including temperature, AC supply voltage, and backup battery voltage.
 
